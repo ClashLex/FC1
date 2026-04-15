@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vishu Festival - Light Mode</title>
+
+<style>
+
+/* ===== BASE ===== */
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+body{
+  font-family: Arial, sans-serif;
+  background:#f8fafc; /* Soft light background */
+  color:#1e293b; /* Dark slate text for readability */
+  line-height:1.6;
+}
+
+.container{
+  max-width:1100px;
+  margin:auto;
+  padding:20px;
+}
+
+/* ===== NAV ===== */
+header{
+  background: #ffffff;
+  border-bottom:1px solid #e2e8f0;
+}
+
+.nav{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.nav h1{
+  font-size:22px;
+  color: #0f172a;
+}
+
+.nav a{
+  color:#475569;
+  text-decoration:none;
+  margin-left:15px;
+  font-size:14px;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav a:hover {
+  color: #ca8a04; /* Darker golden yellow on hover */
+}
+
+/* ===== HERO ===== */
+.hero{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:30px;
+  align-items:center;
+  margin-top:40px;
+}
+
+.hero img{
+  width:100%;
+  border-radius:10px;
+  object-fit: cover;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+}
+
+.hero h2{
+  font-size:34px;
+  margin-bottom:10px;
+  color: #0f172a;
+}
+
+.hero p{
+  color:#475569;
+  margin-bottom:15px;
+  font-size: 1.1rem;
+}
+
+.btn{
+  background:#facc15; /* Signature Vishu yellow */
+  border:none;
+  padding:10px 18px;
+  color:#0f172a; /* Dark text for contrast against yellow */
+  border-radius:6px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 4px 6px -1px rgba(250, 204, 21, 0.4);
+  transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.btn:hover {
+  background: #eab308;
+  transform: translateY(-2px);
+}
+
+/* ===== SECTION ===== */
+.section{
+  margin-top:60px;
+}
+
+.section h2{
+  text-align:center;
+  margin-bottom:30px;
+  color: #0f172a;
+}
+
+/* ===== GRID ===== */
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+  gap:20px;
+}
+
+/* ===== CARD ===== */
+.card{
+  background:#ffffff; /* Pure white cards */
+  border-radius:10px;
+  overflow:hidden;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.card:hover {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1);
+  transform: translateY(-4px);
+}
+
+.card img{
+  width:100%;
+  height:180px;
+  object-fit:cover;
+  border-bottom: 1px solid #e2e8f0;
+}
+
+.card-content{
+  padding:15px;
+}
+
+.card-content h3 {
+  color: #0f172a;
+  margin-bottom: 8px;
+}
+
+.card-content p {
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+/* ===== FOOTER ===== */
+footer{
+  text-align:center;
+  margin-top:60px;
+  padding:20px;
+  border-top:1px solid #e2e8f0;
+  font-size:14px;
+  color: #475569;
+  background: #ffffff;
+}
+
+/* ===== RESPONSIVE ===== */
+@media(max-width:768px){
+  .hero{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <h1>🌼 Vishu</h1>
+    <div>
+      <a href="#">Home</a>
+      <a href="#">Traditions</a>
+      <a href="#">Celebrations</a>
+    </div>
+  </div>
+</header>
+
+<section class="container hero">
+  <div>
+    <h2>Happy Vishu 🌼</h2>
+    <p>Vishu marks the Malayalam New Year, symbolizing prosperity, hope, and new beginnings in Kerala.</p>
+    <button class="btn">Learn More</button>
+  </div>
+
+  <img src="https://upload.wikimedia.org/wikipedia/commons/d/de/Vishu_Kani_foods.jpg" alt="A traditional Vishukkani display with auspicious items">
+</section>
+
+<section class="container section">
+  <h2>Traditions</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://img.onmanorama.com/content/dam/mm/en/travel/kerala/images/2025/4/11/vishu-kani-temples.jpg/photos/16x9/photo.jpg">
+      <div class="card-content">
+        <h3>Vishukkani</h3>
+        <p>A sacred arrangement viewed first in the morning for good luck.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://i.pinimg.com/736x/13/33/a1/1333a11413ed23d64f2cd11ecbab0cb4.jpg">
+      <div class="card-content">
+        <h3>Konna Flowers</h3>
+        <p>Golden flowers that symbolize prosperity and happiness.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://m.media-amazon.com/images/I/61OcR14zoqL._AC_UF350,350_QL80_.jpg">
+      <div class="card-content">
+        <h3>Oil Lamps(Nilavilakku)</h3>
+        <p>Lamps are lit to bring positivity and divine blessings.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section class="container section">
+  <h2>Celebrations</h2>
+
+  <div class="grid">
+
+    <div class="card">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Sadhya_DSW.jpg/1280px-Sadhya_DSW.jpg" alt="Grand Vishu Sadya feast served on a banana leaf">
+      <div class="card-content">
+        <h3>Vishu Sadya</h3>
+        <p>A grand feast served on banana leaves with traditional dishes.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://keralakaumudi.com/web-news/en/2023/04/NMAN0406651/image/vishu.1.2124552.jpg" alt="Indian currency notes representing Kaineettam">
+      <div class="card-content">
+        <h3>Kaineettam</h3>
+        <p>Elders give money to younger ones as blessings.</p>
+      </div>
+    </div>
+
+    <div class="card">
+      <img src="https://www.livelaw.in/h-upload/2021/09/28/750x450_401538-firecrackers.jpg">
+      <div class="card-content">
+        <h3>Fireworks</h3>
+        <p>Celebrations include crackers and joyful gatherings.</p>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  🌼 Happy Vishu 2026 🌼
+</footer>
+
+</body>
+</html>
